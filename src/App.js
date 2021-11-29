@@ -6,11 +6,12 @@ function addPerson(data) {
       <span>{data[0]}</span>
       <span>{data[1]}</span>
       <span>{data[2]}</span>
+      <span>{data[3]}</span>
     </div>
   );
 }
 export default function App() {
-  let rosterRows = rosterData.map(addPerson);
+  let rosterRows = people.map(addPerson);
 
   return (
     <div className="table">
@@ -30,3 +31,26 @@ let rosterData = [
   ["Luna Marcelino", "She/Hers", "P-Tech", "2022"],
   ["Francelys Lomeli", "She/Her", "Lindblom", "2022"]
 ];
+
+let people = [
+  {
+    name: "Mikkail Allen",
+    pronouns: "He/Him",
+    school: "Williamsburg Charter HS",
+    year: 2022
+  },
+  {
+    name: "Luna Marcelino",
+    pronouns: "She/Hers",
+    school: "P-Tech",
+    year: 2022
+  },
+  {
+    name: "Francelys Lomeli",
+    pronouns: "She/Hers",
+    school: "Lindblom",
+    year: 2022
+  }
+];
+
+console.log(people[2].name);

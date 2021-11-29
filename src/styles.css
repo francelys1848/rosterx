@@ -2,9 +2,13 @@
   font-family: sans-serif;
   text-align: center;
 }
+.header {
+  display: flex;
+  justify-content: space-around;
+  background-color: pink;
+}
 
 .row {
   display: flex;
   justify-content: space-between;
-  background-color: pink;
 }
